@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dalcom</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:Light300">
+
+    <!-- MDL CSS -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <!-- MDL ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css">
+      body {
+        font-family: 'Roboto', serif;
+
+      }
+
+    img {
+        width: ;
+        height: ;
+        background-color: ;
+        box-shadow: 0px 10px 7px #888888;
+    }
+    img.no-shadow {
+        width: ;
+        height: ;
+        background-color: ;
+        box-shadow: 0px 0px 0px #888888;
+    }
+
+    </style>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- ##########  NAVBAR   ################ -->
+    <!-- ##################################### -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- Start MDL Nav-Header -->
+      <!-- ******************** -->
+      <!-- ******************** -->
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title"><img class="no-shadow" src="../assets/gallery/web/logo/logo-small.png" width="40px"></span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="about.html"> ABOUT US </a>
+          <a class="mdl-navigation__link" href="omata.html"> OMATA </a>
+          <a class="mdl-navigation__link" href="agent-list.html"> AGENT-LIST </a>
+          <a class="mdl-navigation__link" href="news.html"> NEWS </a>
+          <a class="mdl-navigation__link" href="contact.html"> CONTACT </a>
+          <a class="mdl-navigation__link" href="gallery.html"> GALLERY </a>
+          <a class="mdl-navigation__link" href="sign-in.html"> SIGN-IN </a>
+          </nav>
+        </div>
+      </header>
+      <!-- End MDL Nav-Header -->
+      <!-- ****************** -->
+      <!-- ****************** -->
+
+      <!-- Start MDL Drawer -->
+      <!-- **************** -->
+      <!-- **************** -->
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><img class="no-shadow" src="../assets/img/dalcom/logo/logo-small.png" width="40px"></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="about.html"> ABOUT US </a>
+          <a class="mdl-navigation__link" href="omata.html"> OMATA </a>
+          <a class="mdl-navigation__link" href="agent-list.html"> AGENT-LIST </a>
+          <a class="mdl-navigation__link" href="news.html"> NEWS </a>
+          <a class="mdl-navigation__link" href="contact.html"> CONTACT </a>
+          <a class="mdl-navigation__link" href="gallery.html"> GALLERY </a>
+          <a class="mdl-navigation__link" href="sign-in.html"> SIGN-IN </a>
+        </nav>
+      </div>
+      <!-- End MDL Drawer -->
+      <!-- ************** -->
+      <!-- ************** -->
+
+      <!-- MAIN CONTENT -->
+      <!-- ************ -->
+      <!-- ************ -->
+      <!-- ************ -->
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid">
+
+            <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+          <h2 align="center">Our Agent List</h2>
+              <section ng-init="tab = 1">
+                <ul class="nav nav-pills nav-justified">
+                  <li><a href="" ng-click="tab = 1">NAIROBI</a></li>
+                  <li><a href="" ng-click="tab = 2">RIFT-VALLEY</a></li>
+                  <li><a href="" ng-click="tab = 3">COAST</a></li>
+                  <li><a href="" ng-click="tab = 4">CENTRAL</a></li>
+                  <li><a href="" ng-click="tab = 5">NYANZA</a></li>
+                  <li><a href="" ng-click="tab = 6">EASTERN</a></li>
+                  <li><a href="" ng-click="tab = 7">WESTERN</a></li>
+                </ul>
+              </section>
+
+              <!-- NAIROBI REGION -->
+              <div class="panel" ng-show="tab === 1">
+              <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                      <th>BUSINESS NAME</th>
+                      <th>LOCATION</th>
+                      <th>CONTACT</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>HESTA TRADERS </td>
+                      <td>NGARA ROAD NELLEA PLAZA</td>
+                      <td>723335949</td>
+                    </tr>
+                    <tr>
+                      <td>EDIS DIESEL SERVICE</td>
+                      <td>NGARA ROAD NAIROBI</td>
+                      <td>722735140</td>
+                    </tr>
+                    <tr>
+                      <td>AUTOFINE LIMITED</td>
+                      <td>RANGWE ROAD OF LUNGALUNGA NBI</td>
+                      <td>722570279</td>
+                    </tr>
+                    <tr>
+                      <td>ROKIP ENGINEERING LIMITED</td>
+                      <td>HAILE SELASSIE AVENUE NAIROBI</td>
+                      <td>06/03/2015</td>
+                    </tr>
+                    <tr>
+                      <td>ANTONIO ENTERPRISES LIMITED</td>
+                      <td>PANGANI NAIROBI</td>
+                      <td>722892265
+            </td>
+                    </tr>
+                    <tr>
+                      <td>KETAUN DIESEL WORKSHOP LIMITED</td>
+                      <td>LUNGALUNGA NAIROBI</td>
+                      <td>722805299</td>
+                    </tr>
+                    <tr>
+                      <td>PALTALK FLEET MANAGEMENT SYSTEMS</td>
+                      <td>LUNGALUNGA NAIROBI</td>
+                      <td>723531488</td>
+                    </tr>
+            <tr>
+                      <td>JOPA AUTO SPARES</td>
+                      <td>BUNYALA ROAD NAIROBI</td>
+                      <td>721301299</td>
+                    </tr>
+            <tr>
+                      <td>PAN DIESEL ENTERPRISES</td>
+                      <td>POPO ROAD GIKOMBA NAIROBI</td>
+                      <td>721701100</td>
+                    </tr>
+            <tr>
+                      <td>SMART AUTOSPARES</td>
+                      <td>NGONG ROAD NAIROBI</td>
+                      <td>720288480</td>
+                    </tr>
+            <tr>
+                      <td>SILVER CREEK TRADERS LIMITED</td>
+                      <td>NAIROBI</td>
+                      <td>722497097</td>
+                    </tr>
+            <tr>
+                      <td>BONFICACE & QUEENS AUTO SERVICES</td>
+                      <td>RAILWAYS EASY COACH</td>
+                      <td>721916359</td>
+                    </tr>
+            <tr>
+                      <td>TRANS AFRICA MOTORS</td>
+                      <td>NAIROBI FUNZI ROAD</td>
+                      <td>0710404770/0737059190</td>
+                    </tr>
+            <tr>
+                      <td>TOYOTA KENYA</td>
+                      <td>NAIROBI</td>
+                      <td>0719029000/0206967000</td>
+                    </tr>
+            <tr>
+                      <td>PARK MOTORS</td>
+                      <td>NAIROBI</td>
+                      <td>722312725</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+              </div>
+
+              <!-- RIFT VALLY REGION -->
+              <div class="panel" ng-show="tab === 2">
+              <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th>BUSINESS NAME</th>
+                          <th>LOCATION</th>
+                          <th>CONTACT</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>JERIMAX</td>
+                          <td>NAKURU</td>
+                          <td>727896310</td>
+                        </tr>
+                        <tr>
+                          <td>EXPIDIA LOGISTICS</td>
+                          <td>NAKURU</td>
+                          <td>712035528</td>
+                        </tr>
+                        <tr>
+                          <td>UFRA MOTORS</td>
+                          <td>NAKURU</td>
+                          <td>722761512</td>
+                        </tr>
+                <tr>
+                          <td>RHINNO AUTO JAPAN LIMITED</td>
+                          <td>NAKURU INDUSTRIAL AREA</td>
+                          <td>724601324</td>
+                        </tr>
+                <tr>
+                          <td>SOFT VENTURES</td>
+                          <td>NAKURU</td>
+                          <td>721959590</td>
+                        </tr>
+                <tr>
+                          <td>RIZIKI HOLDING COMPANY LIMITED</td>
+                          <td>NAIVASHA</td>
+                          <td>721214616</td>
+                        </tr>
+                <tr>
+                          <td>NAIVABOCH AUTO ELECTRICIAN</td>
+                          <td>NAIVASHA INDUSTRIAL AREA</td>
+                          <td>721212091</td>
+                        </tr>
+                <tr>
+                          <td>NGACHATON AUTOCARE</td>
+                          <td>ONGATA RONGAI</td>
+                          <td>721512032</td>
+                        </tr>
+                        <tr>
+                          <td>PEEJAY & SONS</td>
+                          <td>ELDORET</td>
+                          <td>722828415</td>
+                        </tr>
+                        <tr>
+                          <td>PMRC Control Systems</td>
+                          <td>KERICHO</td>
+                          <td>722828415</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+
+            <!-- COAST REGION -->
+              <div class="panel" ng-show="tab === 3">
+              <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th>BUSINESS NAME</th>
+                          <th>LOCATION</th>
+                          <th>CONTACT</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>HELNIX ALLIED WORKS</td>
+                          <td>KISAUNI, MOMBASA</td>
+                          <td>720292216</td>
+                        </tr>
+                        <tr>
+                          <td>PWANI DIESEL</td>
+                          <td>MAJENGO,MOMBASA</td>
+                          <td>722239956</td>
+                        </tr>
+                        <tr>
+                          <td>MVITA DIESEL</td>
+                          <td>SWALEH NGURU, MOMBASA</td>
+                          <td>722427232</td>
+                        </tr>
+                        <tr>
+                          <td>JAMA AUTO DIESEL</td>
+                          <td>MOMBASA</td>
+                          <td>721394987</td>
+                        </tr>
+                        <tr>
+                          <td>MUSIC PEOPLE</td>
+                          <td>MOMBASA</td>
+                          <td>721633089</td>
+                        </tr>
+                        <tr>
+                          <td>TRANS AFRICA MOTORS</td>
+                          <td>MOMBASA JOMVU</td>
+                          <td>0710404770/0737059190</td>
+                        </tr>
+                        <tr>
+                          <td>NEBSAM DIGITAL KENYA LTD</td>
+                          <td>MOMBASA</td>
+                          <td>0727727461</td>
+                        </tr>
+                        <tr>
+                          <td>INTERDIESEL WORKS LTD</td>
+                          <td>MOMBASA LUMUMBA RD</td>
+                          <td>0722344423/071576613</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+
+              <!-- CENTRAL REGION -->
+              <div class="panel" ng-show="tab === 4">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th>BUSINESS NAME</th>
+                          <th>LOCATION</th>
+                          <th>CONTACT</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BARAKA TRADERS</td>
+                        <td>GATUNDU TOWN</td>
+                        <td>0724572070/0734010336</td>
+                      </tr>
+                      <tr>
+                        <td>LINCOM AUTO SPARES</td>
+                        <td>LIMURU KWA MBIRA</td>
+                        <td>728914298</td>
+                      </tr>
+                      <tr>
+                        <td>AUTOSPIN GARAGE LTD</td>
+                        <td>NYERI</td>
+                        <td>722794684</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- NYANZA REGION -->
+              <div class="panel" ng-show="tab === 5">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th>BUSINESS NAME</th>
+                          <th>LOCATION</th>
+                          <th>CONTACT</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>VOLCANO TECHNOLOGIES</td>
+                        <td>KISII</td>
+                        <td>0726823856</td>
+                      </tr>
+                      <tr>
+                        <td>JOSMA AUTO ENTEPRISES</td>
+                        <td>KISUMU</td>
+                        <td>724493758</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- EASTERN REGION -->
+              <div class="panel" ng-show="tab === 6">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th>BUSINESS NAME</th>
+                          <th>LOCATION</th>
+                          <th>CONTACT</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>PICAD ENTERPRISES</td>
+                        <td>MERU</td>
+                        <td>723127460</td>
+                      </tr>
+                      <tr>
+                        <td>BROAD VISION LIMITED</td>
+                        <td>EMBU</td>
+                        <td>722687954</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- WESTERN REGION -->
+              <div class="panel" ng-show="tab === 7">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th>BUSINESS NAME</th>
+                          <th>LOCATION</th>
+                          <th>CONTACT</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>EUNIMUURI</td>
+                        <td>MERU</td>
+                        <td>723127460</td>
+                      </tr>
+                      <tr>
+                        <td>BROAD VISION LIMITED</td>
+                        <td>KITALE</td>
+                        <td>0734797900</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+      </div>
+
+          </div>
+        </div>
+      </main>
+      <!-- MAIN CONTENT -->
+      <!-- ************ -->
+      <!-- ************ -->
+      <!-- ************ -->
+    
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- custom script -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <!-- MDL SCRIPT -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', serif;
+
+  }
+
+img {
+    width: ;
+    height: ;
+    background-color: ;
+    box-shadow: 0px 10px 7px #888888;
+}
+img.no-shadow {
+    width: ;
+    height: ;
+    background-color: ;
+    box-shadow: 0px 0px 0px #888888;
+}
